@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"exists: $?\")",
+      "Bash(javap -p /c/Users/sreng/theislesoftheblest/run/.mixin.out/class/net/minecraft/client/gui/Hud.class)",
+      "Bash(git ls-remote *)"
+    ]
+  }
+}
