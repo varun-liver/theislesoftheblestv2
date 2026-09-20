@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "theislesoftheblest",
+  "version": "${version}",
+  "name": "theislesoftheblest",
+  "description": "A story mod",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/theislesoftheblest/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.theislesoftheblestv2.theislesoftheblest.client.TheislesoftheblestDataGenerator"
+    ],
+    "client": [
+      "com.theislesoftheblestv2.theislesoftheblest.client.TheislesoftheblestClient"
+    ],
+    "main": [
+      "com.theislesoftheblestv2.theislesoftheblest.Theislesoftheblest"
+    ]
+  },
+  "mixins": [
+    "theislesoftheblest.mixins.json",
+    {
+      "config": "theislesoftheblest.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
