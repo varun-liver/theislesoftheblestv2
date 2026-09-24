@@ -4,7 +4,9 @@
       "Read(//c/Users/sreng/AppData/Local/Temp/claude/c--Users-sreng-theislesoftheblest/c0a46271-57e9-4550-8987-e54e55c892c0/scratchpad/**)",
       "Read(//tmp/**)",
       "Bash(javap -p net/fabricmc/fabric/api/creativetab/v1/CreativeModeTabEvents.class)",
-      "Bash(grep -E \"^[a-z_]+$\")"
+      "Bash(grep -E \"^[a-z_]+$\")",
+      "Read(//tmp/cmt/**)",
+      "Bash(javap -p -c -classpath . net.minecraft.client.renderer.item.ClientItem)"
     ]
   }
 }
