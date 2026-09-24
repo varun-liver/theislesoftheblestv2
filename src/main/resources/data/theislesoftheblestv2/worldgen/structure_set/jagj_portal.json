@@ -1,0 +1,15 @@
+{
+    "structures": [
+        {
+            "structure": "theislesoftheblestv2:jagj_portal",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 918273,
+        "spacing": 50,
+        "separation": 15,
+        "spread_type": "linear"
+    }
+}
