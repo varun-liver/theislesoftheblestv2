@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "theislesoftheblestv2:block/jagj_portal_block"
+    }
+}
