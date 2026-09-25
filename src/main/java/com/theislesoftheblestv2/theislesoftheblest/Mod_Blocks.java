@@ -16,6 +16,6 @@ public class Mod_Blocks {
     public static final Block JAGJ_PORTAL_BLOCK = Registry.register(
         BuiltInRegistries.BLOCK,
         JAGJ_PORTAL_BLOCK_KEY,
-        new Block(BlockBehaviour.Properties.of().setId(JAGJ_PORTAL_BLOCK_KEY).strength(-1.0f, 3600000.0f).noCollision().lightLevel(state -> 15))
+        new JagjPortalBlock(BlockBehaviour.Properties.of().setId(JAGJ_PORTAL_BLOCK_KEY).strength(-1.0f, 3600000.0f).noCollision().lightLevel(state -> 15))
     );
 }

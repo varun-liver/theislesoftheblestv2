@@ -5,6 +5,7 @@
     "carvers": [],
     "features": [],
     "effects": {
-        "water_color": 4159204
+        "water_color": 4159204,
+        "grass_color": 9580720
     }
 }

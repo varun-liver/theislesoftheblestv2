@@ -8,11 +8,9 @@
     "logical_height": 384,
     "ambient_light": 0.0,
     "infiniburn": "#minecraft:infiniburn_overworld",
-    "monster_settings": {
-        "monster_spawn_light_level": {
-            "type": "minecraft:constant",
-            "value": 0
-        },
-        "monster_spawn_block_light_limit": 0
-    }
+    "monster_spawn_light_level": {
+        "type": "minecraft:constant",
+        "value": 0
+    },
+    "monster_spawn_block_light_limit": 0
 }
