@@ -31,7 +31,8 @@ public class JagjPortalBlock extends Block {
             return;
         }
 
-        ServerLevel targetLevel = serverLevel.getServer().getLevel(AGAF_DIMENSION);
+        ResourceKey<Level> destination = serverLevel.dimension() == AGAF_DIMENSION ? Level.OVERWORLD : AGAF_DIMENSION;
+        ServerLevel targetLevel = serverLevel.getServer().getLevel(destination);
         if (targetLevel == null || targetLevel == level) {
             return;
         }
