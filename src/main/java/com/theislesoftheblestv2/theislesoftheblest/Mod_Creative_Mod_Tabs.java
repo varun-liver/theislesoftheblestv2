@@ -15,8 +15,10 @@ public class Mod_Creative_Mod_Tabs {
         // vanilla registries freeze — the tab-content lambda below only runs much later
         // (whenever the creative screen is opened), which is too late to register anything.
         BlockItem jagjPortalBlockItem = Mod_Block_Item.JAGJ_PORTAL_BLOCK_ITEM;
-        CreativeModeTabEvents.modifyOutputEvent(op_blocks).register(output ->
-            output.accept(jagjPortalBlockItem)
-        );
+        BlockItem casaLeavesItem = Mod_Block_Item.CASA_LEAVES_ITEM;
+        CreativeModeTabEvents.modifyOutputEvent(op_blocks).register(output -> {
+            output.accept(jagjPortalBlockItem);
+            output.accept(casaLeavesItem);
+        });
     }
 }

@@ -18,4 +18,15 @@ public class Mod_Block_Item {
         JAGJ_PORTAL_BLOCK_ITEM_KEY,
         new BlockItem(Mod_Blocks.JAGJ_PORTAL_BLOCK, new Item.Properties().setId(JAGJ_PORTAL_BLOCK_ITEM_KEY))
     );
+
+    public static final ResourceKey<Item> CASA_LEAVES_ITEM_KEY = ResourceKey.create(
+        Registries.ITEM,
+        Identifier.fromNamespaceAndPath("theislesoftheblestv2", "casa_leaves")
+    );
+
+    public static final BlockItem CASA_LEAVES_ITEM = Registry.register(
+        BuiltInRegistries.ITEM,
+        CASA_LEAVES_ITEM_KEY,
+        new BlockItem(Mod_Blocks.CASA_LEAVES, new Item.Properties().setId(CASA_LEAVES_ITEM_KEY))
+    );
 }

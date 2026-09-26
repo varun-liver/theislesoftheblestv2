@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/leaves",
+    "textures": {
+        "all": "theislesoftheblestv2:block/casa_leaves"
+    }
+}
