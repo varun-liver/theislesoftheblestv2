@@ -10,28 +10,9 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class Storyline {
 
-    private static final String WELCOME_BAR_ID = "welcome";
-
     public static void init() {
-        ServerPlayConnectionEvents.DISCONNECT.register((handler, server) -> {
-    functions.clearPlayer(handler.player);
-});
-
-ServerTickEvents.END_SERVER_TICK.register(server -> {
-    if (server.getTickCount() % 1 == 0) { // once every tick
-        server.getPlayerList().getPlayers().forEach(functions::tick);
-    }
-});
-        PayloadTypeRegistry.clientboundPlay().register(ActionBarDurationPayload.TYPE, ActionBarDurationPayload.CODEC);
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-            functions.actionbarStart(handler.player, WELCOME_BAR_ID, "Welcome to The Isles of the Blest!");
+            functions.actionbar(handler.player, "Welcome to the Isles of the Blest!", 40); // duration in ticks
         });
-
-        PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
-    if (!world.isClientSide() && player instanceof ServerPlayer serverPlayer) {
-        functions.actionbarEnd(serverPlayer, WELCOME_BAR_ID, true);
-    }
-});
-
     }
 }
